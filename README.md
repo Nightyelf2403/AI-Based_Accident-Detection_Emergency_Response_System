@@ -106,7 +106,6 @@ jupyter notebook 455_Final.ipynb
 | LSTM + CNN         | 90.7%    | 89.1%     | 91.3%  |
 | Vision Transformer | 91.5%    | 90.2%     | 91.7%  |
 
-> 📸 *See `/screenshots/sample_predictions.png` for model prediction outputs.*
 
 ---
 
