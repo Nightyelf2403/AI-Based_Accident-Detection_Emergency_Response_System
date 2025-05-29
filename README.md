@@ -72,8 +72,8 @@ The AI-Based Accident Detection System is designed to:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/accident-detection-system.git
-cd accident-detection-system
+git clone https://github.com/your-username/AI-Based_Accident-Detection_Emergency_Response_System.git
+cd AI-Based_Accident-Detection_Emergency_Response_System
 
 # Create virtual environment (optional but recommended)
 python -m venv venv
