@@ -1,6 +1,6 @@
 # 🚨 AI-Based Accident Detection & Emergency Response System
 
-This project uses advanced computer vision and deep learning techniques to automatically detect road accidents in real-time through CCTV or dashcam video feeds. Upon identifying an incident, the system triggers instant emergency alerts, providing critical information to responders.
+A real-time AI-powered system for detecting road accidents using traffic or dashcam video feeds. Combines YOLO, Faster R-CNN, CNNs, LSTMs, and Vision Transformers for collision and anomaly detection, with instant emergency alerts to reduce response time and save lives.
 
 ---
 
@@ -9,27 +9,46 @@ This project uses advanced computer vision and deep learning techniques to autom
 The AI-Based Accident Detection System is designed to:
 - Monitor live traffic or dashcam video streams
 - Detect accidents or abnormal events (e.g., collisions, sudden stops)
-- Alert emergency services with minimal latency
-- Reduce human monitoring effort and response time
+- Alert emergency services instantly with key event details
+- Minimize human monitoring effort and maximize public safety
 
 ---
 
 ## 🎯 Goals
 
-- **Accurate Detection:** Identify vehicular accidents using trained object and anomaly detection models.
+- **Accurate Detection:** Identify vehicular accidents using object and anomaly detection models.
 - **Real-Time Alerts:** Notify emergency responders instantly when an accident occurs.
-- **Robustness:** Handle varying weather, lighting, and traffic conditions.
-- **Evaluation:** Measure performance using accuracy, precision, recall, and latency.
+- **Robustness:** Handle various weather, lighting, and traffic scenarios.
+- **Performance Tracking:** Measure detection performance using precision, recall, and latency.
 
 ---
 
 ## 📦 Deliverables
 
-- 📁 Labeled dataset of accident and non-accident videos  
-- 🤖 Trained object detection models (YOLO, Faster R-CNN)  
-- ⚠️ Anomaly detection models (CNN, LSTM, ViT)  
-- 📊 Evaluation report with performance metrics  
-- 🔧 Real-time prototype system for testing and demo
+- 📁 Annotated video dataset with accident and non-accident clips  
+- 🤖 Trained models: YOLOv5, Faster R-CNN for object detection  
+- ⚠️ Anomaly detection models: CNNs, LSTMs, Vision Transformers  
+- 📊 Evaluation report with accuracy, precision, recall  
+- 🚨 Functional prototype that performs detection + sends alerts  
+- 🧾 Interactive Jupyter Notebook: `455_Final.ipynb` for full pipeline and model execution  
+- 🖼️ Prediction Results Screenshots included under `/screenshots/` folder
+
+---
+
+## 📊 Dataset
+
+This project uses the **Accident Detection Dataset** from Kaggle:
+
+- **Author**: Rahul Selvakumar  
+- **Link**: [Kaggle Notebook](https://www.kaggle.com/code/rahulselvakumar/accident-detection/notebook)
+
+The dataset includes:
+- Traffic camera footage labeled as *Accident* or *Non-Accident*
+- Real-world and synthetic cases under different conditions
+
+Used for:
+- Training accident detection and classification models
+- Validating model predictions via annotated ground truth
 
 ---
 
@@ -42,29 +61,8 @@ The AI-Based Accident Detection System is designed to:
 | Data Processing       | OpenCV, NumPy, Pandas           |
 | Model Training        | PyTorch / TensorFlow            |
 | Video Streaming       | FFmpeg, OpenCV                  |
-| Alert System          | Custom Notification Module (Email/SMS/API)
+| Alert System          | Email/SMS/API based notification
 
----
-
-## 📁 Folder Structure
-
-```
-
-.
-├── dataset/
-│   └── accident\_clips/, non\_accident\_clips/
-├── models/
-│   └── yolo\_model.pth, anomaly\_model.pth
-├── src/
-│   ├── detection.py
-│   ├── alert\_system.py
-│   ├── stream\_processor.py
-├── evaluation/
-│   └── metrics\_report.md
-├── requirements.txt
-└── README.md
-
-````
 
 ---
 
@@ -75,7 +73,7 @@ The AI-Based Accident Detection System is designed to:
 git clone https://github.com/your-username/AI-Based_Accident-Detection_Emergency_Response_System.git
 cd AI-Based_Accident-Detection_Emergency_Response_System
 
-# Create virtual environment (optional but recommended)
+# Create virtual environment (optional)
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -88,38 +86,42 @@ pip install -r requirements.txt
 ## 🚀 How to Run
 
 ```bash
-# Run real-time detection on a sample video
-python src/stream_processor.py --video input.mp4
+# Run real-time accident detection on a video
+python src/stream_processor.py --video path/to/video.mp4
 
-# Run evaluation
+# To evaluate model performance
 python src/evaluation.py
+
+# Or open and run the full workflow in Jupyter
+jupyter notebook 455_Final.ipynb
 ```
 
 ---
 
 ## 🧪 Model Performance
 
-| Model      | Accuracy | Precision | Recall |
-| ---------- | -------- | --------- | ------ |
-| YOLOv5     | 94.2%    | 92.8%     | 93.5%  |
-| LSTM + CNN | 90.7%    | 89.1%     | 91.3%  |
-| ViT        | 91.5%    | 90.2%     | 91.7%  |
+| Model              | Accuracy | Precision | Recall |
+| ------------------ | -------- | --------- | ------ |
+| YOLOv5             | 94.2%    | 92.8%     | 93.5%  |
+| LSTM + CNN         | 90.7%    | 89.1%     | 91.3%  |
+| Vision Transformer | 91.5%    | 90.2%     | 91.7%  |
+
+> 📸 *See `/screenshots/sample_predictions.png` for model prediction outputs.*
 
 ---
 
 ## 📍 Future Improvements
 
-* Multi-camera integration and GPS tagging
-* Enhanced alerting (live maps, audio feedback)
-* Support for edge devices (Jetson Nano, Raspberry Pi)
-* Integration with smart city infrastructure
+* GPS and timestamp integration for better tracking
+* Edge deployment using Jetson Nano or Raspberry Pi
+* Integration with smart city control systems
+* Live dashboard for visual alerts and analytics
 
 ---
 
 ## 👨‍💻 Author
 
 **Lalith Aditya Chunduri**
-[LinkedIn](https://www.linkedin.com/in/lalith-aditya-chunduri-76573421a/) • [GitHub](https://github.com/Nightyelf2403)
+[GitHub](https://github.com/lalithaditya) • [LinkedIn](https://linkedin.com/in/lalithaditya)
 
 ---
-
