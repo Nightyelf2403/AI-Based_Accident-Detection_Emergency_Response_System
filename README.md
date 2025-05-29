@@ -66,6 +66,37 @@ Used for:
 
 ---
 
+## 🚀 Skills & Technologies Used
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv,github,linux&perline=6" alt="Tech Stack"/>
+</p>
+
+### 🧠 AI & Machine Learning
+- **YOLOv5** / **Faster R-CNN** for object detection & vehicle tracking
+- **CNN**, **LSTM**, **Vision Transformers** for anomaly detection
+- Real-time video stream processing with ML models
+
+### 📹 Computer Vision
+- **OpenCV** for video frame analysis and preprocessing
+- Frame extraction, ROI selection, and background subtraction techniques
+- Annotation and bounding-box visualization
+
+### 🛠️ Tools & Platforms
+- Python-based development with **PyTorch** and **TensorFlow**
+- Dataset labeling, augmentation, and model evaluation using **Scikit-learn**, **Matplotlib**
+- Version control via **Git** & **GitHub**
+- Deployment-ready on **Linux** environments
+
+### 🔔 Alert System
+- Real-time alert generation on accident detection
+- Integration with emergency contact endpoints
+
+---
+
+✨ *This section is animated using [SkillIcons.dev](https://skillicons.dev), so your tech stack stands out visually!*
+
+
 ## ⚙️ Installation & Setup
 
 ```bash
