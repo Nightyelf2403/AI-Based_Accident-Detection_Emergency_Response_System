@@ -121,6 +121,6 @@ jupyter notebook 455_Final.ipynb
 ## 👨‍💻 Author
 
 **Lalith Aditya Chunduri**
-[GitHub](https://github.com/lalithaditya) • [LinkedIn](https://linkedin.com/in/lalithaditya)
+[GitHub](https://github.com/Nightyelf2403) • [LinkedIn](https://www.linkedin.com/in/lalith-aditya-chunduri-76573421a/)
 
 ---
