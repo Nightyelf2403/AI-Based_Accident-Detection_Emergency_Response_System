@@ -94,7 +94,7 @@ Used for:
 
 ---
 
-✨ *This section is animated using [SkillIcons.dev](https://skillicons.dev), so your tech stack stands out visually!*
+✨ *This section is animated using [SkillIcons.dev](https://skillicons.dev)*
 
 
 ## ⚙️ Installation & Setup
